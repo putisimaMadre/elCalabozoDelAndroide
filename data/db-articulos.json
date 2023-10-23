@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "usuario": "John Doe",
+      "email": "john.due@gmail.com"
+    }
+  ],
+  "articulos": [
+    {
+      "id": "spiderman_ps5",
+      "nombre": "juego-spiderman",
+      "precio": "$850",
+      "descripcion": "articulo seminuevo",
+      "categoria": "electronicos, gamer",
+      "estado": "seminuevo"
+    },
+    {
+      "id": "teclado_gamer",
+      "nombre": "teclado-gamer",
+      "precio": "$1200",
+      "descripcion": "articulo seminuevo",
+      "categoria": "electronicos",
+      "estado": "seminuevo"
+    },
+    {
+      "id": "blusa_roja",
+      "nombre": "Blusa mujer roja",
+      "precio": "$650",
+      "descripcion": "articulo seminuevo",
+      "categoria": "ropa, dama",
+      "estado": "seminuevo"
+    },
+    {
+      "id": "peavey_bocina",
+      "nombre": "Bocina Peavey 18",
+      "precio": "$3500",
+      "descripcion": "articulo seminuevo",
+      "categoria": "electronicos",
+      "estado": "seminuevo"
+    }
+  ]
+}
