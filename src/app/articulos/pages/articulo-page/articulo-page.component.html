@@ -1,3 +1,4 @@
+
 <ng-template #divLoading>
   <mat-grid-list cols="1">
     <mat-grid-tile>
@@ -7,20 +8,48 @@
 </ng-template>
 
 <div *ngIf="articulo; else divLoading" class="grid p-2">
-
-  <mat-card class="col-12 sm:col-6">
+<div class="grid col-12">
+  <mat-card class="col-4 sm:col-4 md:col-4 lg:col-4">
     <mat-card-header>
-      <mat-card-title>{{articulo.nombre}}</mat-card-title>
-      <mat-card-subtitle>{{articulo.descripcion}}</mat-card-subtitle>
+      <mat-card-title></mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
     </mat-card-header>
-    <img width="50%" [src]="articulo | articuloImagePipe" [alt]="articulo.nombre" mat-card-image>
+    <mat-card-content>
+      <c-carousel>
+        <c-carousel-indicators></c-carousel-indicators>
+        <c-carousel-inner>
+          <c-carousel-item *ngFor="let slide of slides">
+            <img
+              alt="{{slide.title}}"
+              class="d-block w-100"
+              loading="lazy"
+              src="{{slide.src}}"
+            />
+            <c-carousel-caption class="d-none d-md-block">
+              <h3>{{slide.title}}</h3>
+              <p>{{slide.subtitle}}</p>
+            </c-carousel-caption>
+          </c-carousel-item>
+        </c-carousel-inner>
+        <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+        <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+      </c-carousel>
+    </mat-card-content>
   </mat-card>
 
-  <mat-card class="col-12 sm:col-6 md:col-6">
+
+  <mat-card class="col-8 sm:col-8 md:col-8 lg:col-8">
+    <c-alert color="warning">
     <mat-card-header>
-      <mat-card-title>Informacion</mat-card-title>
-      <mat-card-subtitle>{{articulo.descripcion}}</mat-card-subtitle>
+      <mat-card-title>
+        <h1>Información</h1>
+      </mat-card-title>
+      <mat-card-subtitle>
+        <h2>{{articulo.descripcion}}</h2>
+        </mat-card-subtitle>
     </mat-card-header>
+    </c-alert>
+    <hr/>
     <mat-card-content>
       <mat-list>
         <mat-list-item>Nombre: {{articulo.nombre}}</mat-list-item>
@@ -34,5 +63,5 @@
       </button>
     </mat-card-content>
   </mat-card>
-
+</div>
 </div>

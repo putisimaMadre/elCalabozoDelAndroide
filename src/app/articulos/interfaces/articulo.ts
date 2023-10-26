@@ -1,11 +1,14 @@
 export interface Articulo{
-  id:             String;
-  nombre:         String;
+  id:             number;
+  nombre:         string;
   precio:         number;
-  descripcion:    String;
-  categoria:      String;
+  descripcion:    string;
+  categoria:      string;
   estado:         Estado;
-  alt_img?:        String;
+  alt_img?:       string;
+  img1?:          string;
+  img2?:          string;
+  img3?:          string;
 }
 
 export enum Estado {

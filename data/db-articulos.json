@@ -8,36 +8,48 @@
   ],
   "articulos": [
     {
-      "id": "spiderman_ps5",
-      "nombre": "juego-spiderman",
+      "id": "1",
+      "nombre": "Spiderman Playstation 5",
       "precio": "$850",
       "descripcion": "articulo seminuevo",
       "categoria": "electronicos, gamer",
-      "estado": "seminuevo"
+      "estado": "seminuevo",
+      "img1": "spiderman_ps5_1",
+      "img2": "spiderman_ps5_2",
+      "img3": "spiderman_ps5_3"
     },
     {
-      "id": "teclado_gamer",
-      "nombre": "teclado-gamer",
+      "id": "2",
+      "nombre": "Teclado Gamer",
       "precio": "$1200",
       "descripcion": "articulo seminuevo",
       "categoria": "electronicos",
-      "estado": "seminuevo"
+      "estado": "seminuevo",
+      "img1": "teclado_gamer_1",
+      "img2": "teclado_gamer_2",
+      "img3": "teclado_gamer_3"
     },
     {
-      "id": "blusa_roja",
-      "nombre": "Blusa mujer roja",
+      "id": "3",
+      "nombre": "Blusa Roja",
       "precio": "$650",
       "descripcion": "articulo seminuevo",
       "categoria": "ropa, dama",
-      "estado": "seminuevo"
+      "estado": "seminuevo",
+      "img1": "blusa_roja_1",
+      "img2": "blusa_roja_2",
+      "img3": "blusa_roja_3"
     },
     {
-      "id": "peavey_bocina",
-      "nombre": "Bocina Peavey 18",
+      "id": "4",
+      "nombre": "Bocina Peavey",
       "precio": "$3500",
       "descripcion": "articulo seminuevo",
       "categoria": "electronicos",
-      "estado": "seminuevo"
+      "estado": "seminuevo",
+      "img1": "peavey_bocina_1",
+      "img2": "peavey_bocina_2",
+      "img3": "peavey_bocina_3"
     }
   ]
 }

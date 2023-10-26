@@ -21,8 +21,8 @@ import { MatTableModule } from "@angular/material/table"
 import { MatRadioModule } from "@angular/material/radio"
 import { MatCheckboxModule } from "@angular/material/checkbox"
 import { MatMenuModule } from '@angular/material/menu';
-
-
+import {AlertModule, CarouselModule} from '@coreui/angular';
+import { ImgModule } from '@coreui/angular';
 
 @NgModule({
   exports: [
@@ -47,7 +47,10 @@ import { MatMenuModule } from '@angular/material/menu';
     MatSortModule,
     MatRadioModule,
     MatCheckboxModule,
-    MatMenuModule
+    MatMenuModule,
+    CarouselModule,
+    ImgModule,
+    AlertModule
   ]
 
 })

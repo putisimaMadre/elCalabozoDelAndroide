@@ -11,6 +11,6 @@ export class ArticuloImagePipePipe implements PipeTransform {
       return 'assets/no-image.png'
     }
     if(articulo.alt_img) return articulo.alt_img;
-    return `assets/articulos/${articulo.id}.jpeg`;
+    return `assets/articulos/${articulo.img1}.jpg`;
   }
 }

@@ -16,8 +16,8 @@ export class ArticuloService {
     return this.httpClient.get<Articulo[]>(`${ this.baseUrl }/articulos`)
   }
 
-  getArticuloById(id: string): Observable<Articulo | undefined>{
-    return this.httpClient.get<Articulo>(`${ this.baseUrl }/articulos/${ id }`)
+  getArticuloById(nombre: string): Observable<Articulo | undefined>{
+    return this.httpClient.get<Articulo>(`${ this.baseUrl }/articulos/${ nombre }`)
       .pipe(
         catchError(error => of(undefined))
       )
